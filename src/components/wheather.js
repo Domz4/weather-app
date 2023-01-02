@@ -11,12 +11,12 @@ const Weather = ({ lat, lon }) => {
     };
     weatherData();
   }, [lat, lon]);
-
   return (
     <>
       <div>
         <h1>Weather in</h1>
         <h2>Temperature</h2>
+        <div>{currentWeather}</div>
       </div>
     </>
   );

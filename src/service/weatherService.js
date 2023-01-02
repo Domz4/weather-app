@@ -15,8 +15,12 @@ export const getCity = async (city) => {
 };
 
 export const getWeather = async (lat, lon) => {
-  const response = await axios.get(`${weatherUrl}${lat}${lon}`);
-  return response.data;
+  try {
+    const response = await axios.get(`${weatherUrl}${lat}${lon}`);
+    return response.data;
+  } catch (err) {
+    console.error(err);
+  }
 };
 export const getForecast = async (lat, lon) => {
   const response = await axios.get(`${forecastUrl}${lat}${lon}`);

@@ -2,7 +2,9 @@ import Citysearch from "./components/citySearch";
 function App() {
   return (
     <>
-      <Citysearch />
+      <div className="search_container">
+        <Citysearch />
+      </div>
     </>
   );
 }

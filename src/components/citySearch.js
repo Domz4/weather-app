@@ -24,6 +24,7 @@ const Citysearch = () => {
   return (
     <>
       <AsyncPaginate
+        className="search_bar"
         placeholder="search"
         debounceTimeout={500}
         value={search}

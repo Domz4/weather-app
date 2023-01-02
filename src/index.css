@@ -1,7 +1,19 @@
 * {
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 body {
   height: 100%;
-  background-color: rgb(5, 5, 58);
+  background-color: rgb(27, 27, 49);
+}
+.search_bar {
+  width: 75%;
+}
+.search_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
 }
